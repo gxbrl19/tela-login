@@ -16,7 +16,7 @@
     --deep-grey: #343434;
     --black: #000000;
     --blue: #1B77F3;
-    --red: #CF3C3F;
+    --orange: #fd701b;
 }
 
 main {
@@ -97,7 +97,7 @@ main {
 .login_icons {
     display: flex;
     gap: 10px;
-    width: 100%;
+    width: 120px;
     margin-top: 20px;
 }
 
@@ -147,7 +147,7 @@ main {
 }
 
 .input--checkbox:checked {
-    background-color: var(--red);
+    background-color: var(--orange);
 }
 
 .input--checkbox:checked::after {
@@ -162,31 +162,31 @@ main {
 }
 
 .login_button {
-    width: 60px;
+    width: 100px;
     height: 60px;
     padding: 20px;
-    display: flex;
+    display: flex;    
+    font-weight: 600;
+    font-size: 15px;
     align-content: center;
     justify-content: center;
-    background-color: var(--red);
+    background-color: var(--orange);
+    color: var(--whitesmoke);
     border-radius: 20px;
     border: none;
     cursor: pointer;
     margin-bottom: 60px;
-}
-
-.login_button svg {
-    fill: white;
+    box-shadow: rgba(118, 79, 54, 0.811) 0px 1px 5px;
 }
 
 .login_button:disabled {
     cursor: auto;
     background-color: white;
+    color: var(--light-grey);
     border:  2px solid var(--light-grey);
-}
-
-.login_button:disabled svg {
-    fill: var(--grey);
+    font-weight: 600;
+    font-size: 15px;    
+    box-shadow: rgba(118, 79, 54, 0.811) 0px 0px 0px;
 }
 
 .login_link {
